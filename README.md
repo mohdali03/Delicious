@@ -1,11 +1,3 @@
-<!-- # TiffinManagment
-
-![Logo](https://res.cloudinary.com/dkgoet9em/image/upload/v1690174978/TiffinManagment/TiffinWala_aa7m54.png)
-TiffinManagment is a basic Tiffin Ordering Application that is build using the MERN Stack stands for MongoDB, ExpressJS, ReactJS, NodeJS.
-
-## Live Website
-
-- [TiffinManagment](https://tiffin-managment-client.vercel.app/) -->
 
 # Features
 
@@ -40,15 +32,15 @@ TiffinManagment is a basic Tiffin Ordering Application that is build using the M
 
 ## Installation Guide
 
-To Run TiffinManagment project on local system follow the simple steps:
+To Run Delicious project on local system follow the simple steps:
 
 ### Step-1
 
 clone this project on your local system
 
 ```bash
-  git clone https://github.com/AMS006/TiffinManagment
-  cd TiffinManagment
+  git clonehttps://github.com/mohdali03/Delicious.git
+  cd Delicious
 ```
 
 ### Step-2 Installing Dependency
@@ -56,7 +48,7 @@ clone this project on your local system
 Installing Dependency for client and Server both
 
 ```bash
-  cd TiffinManagment
+  cd Delicious
 ```
 
 To Installing Dependency for client
