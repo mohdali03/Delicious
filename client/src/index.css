@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+    scroll-behavior: 100%;
+}
+
+body {
+    background: #ffff;
+    /* Changed background color */
+    color: #4a5568;
+    /* Changed text color */
+    height: 100%;
+
+
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#root {
+    overflow: auto;
+    height: 100%;
+}
+
+nav,
+footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #4299e1 !important;
+    /* Changed active bullet color to a shade of blue */
+}
+
+.swiper-pagination-bullet {
+    background: #ef4444 !important;
+    /* Changed bullet color to a shade of red */
+}
+
+.heroImage {
+    border-radius: 20px;
+    /* Simplified border-radius */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border: 1px solid #e2e8f0;
+    /* Adjusted button border color */
+    border-radius: 50%;
+    width: 2rem !important;
+    height: 2rem !important;
+    background: #4299e1;
+    /* Changed button background color to a shade of blue */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #ffffff;
+    /* Changed button arrow color to white */
+}
+
+@media (max-width: 550px) {
+    .heroImage {
+        border-radius: 10px;
+        /* Adjusted border-radius for smaller screens */
+        height: 60% !important;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        padding-top: 0;
+    }
+}
+
+.chooseuscss {
+    font-family: 'Trochut', cursive;
+}
+
+@media (min-width: 1024px) {
+    .lastimg {
+        height: 200px !important;
+    }
+
+    .heighta {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 600px) {
+    .heighta {
+        height: 89vh !important;
+    }
+}

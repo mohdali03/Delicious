@@ -1,0 +1,36 @@
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { IoLocation } from 'react-icons/io5'
+import { AiFillStar } from 'react-icons/ai';
+import Skeleton from './Skeleton';
+
+function ProviderCard({ providerLogo, name, address, rating, id }) {
+  if (Number(rating) % 2 === 0) {
+    rating += '.0'
+  } else {
+    rating = Number(rating).toFixed(1)
+  }
+  const [loading, setLoading] = useState(true)
+  return (
+    <>
+      <Link to={`/provider/${id}`} className='flex flex-col p-2 border border-gray-200 hover:shadow-lg rounded-lg transition duration-300 ease-in gap-3'>
+        <div className='w-full h-52'>
+          {loading && <Skeleton />}
+          <img src={providerLogo} onLoad={() => setLoading(false)} alt="name" className={`${loading ? 'hidden' : 'block'} h-full  overflow-hidden m-auto rounded-t-lg`} />
+        </div>
+        <div className='flex flex-col gap-1 p-2 text-gray-900'>
+          <div className='text-lg font-semibold flex justify-between items-center'>
+            <h1>{name}</h1>
+            <span className='flex items-center bg-red-600 rounded-lg px-4 p-1 text-white'><small>{`${rating === 0 ? 'New' : rating}`}</small><AiFillStar fontSize={"medium"} /></span>
+          </div>
+          <p className='text-sm'>Veg, Non-Veg, Lunch, Dinner</p>
+          <p className='text-gray-500'>Time: 8:00 am To 8:30 pm</p>
+          <p className='flex items-center text-gray-600'><span><IoLocation /></span>{address}</p>
+        </div>
+      </Link>
+
+    </>
+  )
+}
+
+export default ProviderCard
