@@ -47,7 +47,7 @@ function AllProvidersPage() {
       setIsSearch(false)
     }
     if(searchData.length>0 && allProviders && allProviders.length >0){
-      updatedSearchedProviders = allProviders.filter((provider) => provider.address.toLowerCase().search(searchData.toLowerCase()) !== -1)
+      updatedSearchedProviders = allProviders.filter((provider) => provider.address.toLowerCase().search(searchData.toLowerCase()) !== -1 || provider.name.toLowerCase().search(searchData.toLowerCase()) !== -1)
     }
     if(updatedSearchedProviders.length >0){
       setSearchedProviders(updatedSearchedProviders)
@@ -75,7 +75,7 @@ function AllProvidersPage() {
           <div className='flex items-center border rounded-full w-96 mx-3 shadow'>
             <div className='flex items-center border bg-white w-full rounded-full overflow-hidden'>
               <input type="text" onKeyDown={handleKeyDown} name="search" value={searchData} onChange={(e)=> setSearchData(e.target.value)} placeholder='Search Provider Near You' className='w-full h-full px-4 py-2 border-l focus:outline-none flex items-center' id="email"/>
-              <button onClick={handleSearch} className='flex items-center btn-grad text-white h-10 px-3'>
+              <button onClick={handleSearch} className='flex items-center  px-1 btn-grad text-white h-10 '>
                 <BiSearch />
               </button>
             </div>

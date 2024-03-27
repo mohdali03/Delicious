@@ -7,9 +7,9 @@ const AboutusPara=()=>{
         <img src={Aboutusimg} alt="About us img" className="h-full w-full heighta" style={{width:"100vw"}}  />
             <div className="py-4">
         
-                <h1 className="text-center text-2xl py-4 sm:text-3xl md:text-4xl" style={{fontFaimily:"unset",fontWeight:"600"}}>Welcome to TiffinWala</h1>
+                <h1 className="text-center text-2xl py-4 sm:text-3xl md:text-4xl" style={{fontFaimily:"unset",fontWeight:"600"}}>Welcome to Delicious</h1>
                 <p className="px-8 text-justify text-sm sm:text-md lg:text-lg" >
-              Tiffinwala is an attempt to provide a service that connects people with best of their neighborhoods across various cities. We strive to enable local businesses to meet consumers’ needs of ease and convenience, and, in turn, generate new ways for people to earn, work, and live. By providing our services to local commerce, we’re trying to fulfill our mission to grow and empower local economies.
+              Delicious is an attempt to provide a service that connects people with best of their neighborhoods across various cities. We strive to enable local businesses to meet consumers’ needs of ease and convenience, and, in turn, generate new ways for people to earn, work, and live. By providing our services to local commerce, we’re trying to fulfill our mission to grow and empower local economies.
                 </p>
                 <p className="px-8 text-justify text-sm sm:text-md lg:text-lg">Search for daily requirements. How it works: you type in an address; we tell you the tiffin providers that are available in that locale as well as showing you droves of pickup restaurants near you. Want to be more specific? Search by cuisine, tiffin providers’ name or menu item. We'll filter your results accordingly.</p>
                 

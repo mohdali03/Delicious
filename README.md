@@ -39,7 +39,7 @@ To Run Delicious project on local system follow the simple steps:
 clone this project on your local system
 
 ```bash
-  git clonehttps://github.com/mohdali03/Delicious.git
+  git clone https://github.com/mohdali03/Delicious.git
   cd Delicious
 ```
 
