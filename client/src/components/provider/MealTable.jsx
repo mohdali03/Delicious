@@ -189,7 +189,7 @@ export default function ProductPage() {
                         <AiFillEye className='text-white' style={{ color: 'white', fontSize: '14px' }} />
                         <span className='' >View</span>
                       </button>
-                      <button className='border px-2 py-1 flex items-center rounded-md  btn-grad text-white' style={{ gap: '1px' }} onClick={() => foodDelete(food._id)}>
+                      <button className='border px-2 py-1 flex items-center rounded-md  bg-red-700 text-white' style={{ gap: '1px' }} onClick={() => foodDelete(food._id)}>
                         <MdDelete className='text-white' style={{ color: 'white', fontSize: '14px' }} />
                         <span>Delete</span>
                       </button>

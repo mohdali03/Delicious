@@ -40,8 +40,8 @@ function ProviderLogin() {
   return (
     <div>
       <div className='py-2 sm:px-8 px-2 shadow flex justify-between items-center'>
-        <Link to="/" className='flex items-center'>
-          <img src={logo} className='h-8 object-contain' alt="" />
+        <Link to="/" className='flex gap-6 items-center'>
+          <img src={logo} className='h-10  object-contain' alt="" />
           <h1 className='font-bold text-xl '>Delicious</h1>
         </Link>
         <Link to="/" className='flex items-center gap-2'>
