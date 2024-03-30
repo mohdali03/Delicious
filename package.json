@@ -1,0 +1,19 @@
+{
+  "name": "Delicious",
+  "version": "1.0.0",
+  "description": "An application for ordering tiffin services",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd client && npm install && cd ../server && npm install",
+    "start-all": "npx concurrently \"cd client && npm start\" \"cd server && npm start\"",
+    "start-frontend": "cd client && npm start",
+    "start-backend": "cd server && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
